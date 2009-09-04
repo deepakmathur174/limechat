@@ -845,7 +845,7 @@ class MenuController < NSObject
       if sender.selectedRows.size > 1
         sender.select(n)
       end
-      whois_selected_members(nil, false)
+      onMemberTalk(sender)
     end
   end
 
