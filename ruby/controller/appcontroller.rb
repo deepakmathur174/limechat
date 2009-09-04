@@ -660,8 +660,8 @@ class AppController < NSObject
   end
 
   def register_key_handlers
-    handler(:home) { scroll(:home) }
-    handler(:end) { scroll(:end) }
+    handler(:home, :ctrl) { scroll(:home) }
+    handler(:end, :ctrl) { scroll(:end) }
     handler(:pageup) { scroll(:up) }
     handler(:pagedown) { scroll(:down) }
     handler(:tab) { tab }
