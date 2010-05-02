@@ -1039,8 +1039,8 @@ typedef enum {
 		[self handler:@selector(selectServerAtNumber:) char:'0'+i mods:NSCommandKeyMask|NSControlKeyMask];
 	}
 
-	[self inputHandler:@selector(inputScrollToTop:) code:KEY_HOME mods:0];
-	[self inputHandler:@selector(inputScrollToBottom:) code:KEY_END mods:0];
+	[self inputHandler:@selector(inputScrollToTop:) code:KEY_HOME mods:NSControlKeyMask];
+	[self inputHandler:@selector(inputScrollToBottom:) code:KEY_END mods:NSControlKeyMask];
 	[self inputHandler:@selector(inputScrollPageUp:) code:KEY_PAGE_UP mods:0];
 	[self inputHandler:@selector(inputScrollPageDown:) code:KEY_PAGE_DOWN mods:0];
 	[self inputHandler:@selector(inputHistoryUp:) code:KEY_UP mods:0];
