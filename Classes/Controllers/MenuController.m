@@ -999,7 +999,7 @@
 		if ([[sender selectedRowIndexes] count] > 0) {
 			[sender select:n];
 		}
-		[self whoisSelectedMembers:nil deselect:NO];
+		[self onMemberTalk:nil];
 	}
 }
 
